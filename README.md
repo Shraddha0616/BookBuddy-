@@ -3,6 +3,7 @@ BookBuddy is your personalized book recommendation  chatbot that matches you wit
 
 
 *PROJECT STRUCTURE*
+
 book-chatbot/
 ├── functions/
 │   └── book-recommend.js
