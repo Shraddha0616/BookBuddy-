@@ -1,0 +1,868 @@
+{
+  "name": "Book Recommendation",
+  "intents": [
+    {
+      "intent": "ThankYou",
+      "examples": [
+        {
+          "text": "good bye"
+        },
+        {
+          "text": "bye for now"
+        },
+        {
+          "text": "thnx"
+        },
+        {
+          "text": "thankz"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "thank you"
+        },
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "thx"
+        },
+        {
+          "text": "cya"
+        }
+      ]
+    },
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "Good afternoon"
+        },
+        {
+          "text": "helloz"
+        },
+        {
+          "text": "Greetings"
+        },
+        {
+          "text": "Greetins"
+        },
+        {
+          "text": "Good morning"
+        },
+        {
+          "text": "GM"
+        },
+        {
+          "text": "Hey"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "hola"
+        },
+        {
+          "text": "Hi"
+        }
+      ]
+    },
+    {
+      "intent": "book_recommendations",
+      "examples": [
+        {
+          "text": "Good Dystopia Fiction books"
+        },
+        {
+          "text": "Good Psychology books"
+        },
+        {
+          "text": "Good Memoir books"
+        },
+        {
+          "text": "Good Horror books"
+        },
+        {
+          "text": "Good Mystery books"
+        },
+        {
+          "text": "Recommend good books for Kids"
+        },
+        {
+          "text": "Recommend good books for Young Adult"
+        },
+        {
+          "text": "Recommend good books for Short Stories"
+        },
+        {
+          "text": "Recommend good books for Historical Fiction"
+        },
+        {
+          "text": "Recommend good books for Fantasy"
+        },
+        {
+          "text": "Recommend good books for Science Fiction"
+        },
+        {
+          "text": "Recommend good books for Realistic Fiction"
+        },
+        {
+          "text": "Recommend good books for Dystopia Fiction"
+        },
+        {
+          "text": "Recommend good books for Psychology"
+        },
+        {
+          "text": "Recommend good books for Memoir"
+        },
+        {
+          "text": "Recommend good books for Horror"
+        },
+        {
+          "text": "Recommend good books for Mystery"
+        },
+        {
+          "text": "Book recommendations for Kids"
+        },
+        {
+          "text": "Book recommendations for Young Adult"
+        },
+        {
+          "text": "Book recommendations for Short Stories"
+        },
+        {
+          "text": "Book recommendations for Historical Fiction"
+        },
+        {
+          "text": "Book recommendations for Fantasy"
+        },
+        {
+          "text": "Book recommendations for Science Fiction"
+        },
+        {
+          "text": "Book recommendations for Realistic Fiction"
+        },
+        {
+          "text": "Book recommendations for Dystopia Fiction"
+        },
+        {
+          "text": "Book recommendations for Fiction"
+        },
+        {
+          "text": "Book recommendations for Psychology"
+        },
+        {
+          "text": "Book recommendations for Memoir"
+        },
+        {
+          "text": "Book recommendations for Horror"
+        },
+        {
+          "text": "Book recommendations for Mystery"
+        },
+        {
+          "text": "Recommend good books for biography"
+        },
+        {
+          "text": "Recommend good biography based books."
+        },
+        {
+          "text": "Good biography books"
+        },
+        {
+          "text": "Book recommendations for Biographies"
+        },
+        {
+          "text": "Book recommendations for Biography"
+        },
+        {
+          "text": "realistic"
+        },
+        {
+          "text": "scifi"
+        },
+        {
+          "text": "Recommendations for Books"
+        },
+        {
+          "text": "What books do you recommend me to read?"
+        },
+        {
+          "text": "I need recommendation for books"
+        },
+        {
+          "text": "Need help to select some books to read"
+        },
+        {
+          "text": "Recommend books to read"
+        },
+        {
+          "text": "book recommendations to read"
+        },
+        {
+          "text": "what kind of books to read?"
+        },
+        {
+          "text": "read which type books?"
+        },
+        {
+          "text": "Which type of books shall I read today"
+        },
+        {
+          "text": "Recommendation for Good reads"
+        },
+        {
+          "text": "Good books to read"
+        },
+        {
+          "text": "Good Kids books"
+        },
+        {
+          "text": "Good Young Adult books"
+        },
+        {
+          "text": "Good Short Stories books"
+        },
+        {
+          "text": "Good Historical Fiction books"
+        },
+        {
+          "text": "good Fantasy  books"
+        },
+        {
+          "text": "Good Science Fiction"
+        },
+        {
+          "text": "Good Realistic Fiction books"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "book_genre",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "fiction",
+          "synonyms": [
+            "fantasy",
+            "fictions",
+            "novelist",
+            "unreal",
+            "literary",
+            "imagination",
+            "surreal"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mystery",
+          "synonyms": [
+            "mysterious",
+            "riddle",
+            "secret",
+            "puzzle",
+            "enigma",
+            "mystère",
+            "ambiguity"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Horror",
+          "synonyms": [
+            "scary",
+            "terror",
+            "fear"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Memoir",
+          "synonyms": [
+            "autobiography",
+            "autobiographical",
+            "memoirist",
+            "memoirs",
+            "memory",
+            "nonfiction"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Psychology",
+          "synonyms": [
+            "psychologist",
+            "psychological",
+            "sociology",
+            "psychiatry",
+            "psychobiology",
+            "psych",
+            "mentality",
+            "philosophy"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dystopia",
+          "synonyms": [
+            "dystopian",
+            "dystopic"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Short Stories",
+          "synonyms": [
+            "story",
+            "tales",
+            "novels",
+            "narratives",
+            "storytelling",
+            "articles",
+            "examples"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Young Adult",
+          "synonyms": [
+            "unitarian",
+            "lenten",
+            "interfaith",
+            "childrens"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Kid",
+          "synonyms": [
+            "child",
+            "teenager",
+            "children",
+            "little",
+            "kiddo",
+            "baby",
+            "kids",
+            "teenage"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "genre_fiction",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Fantasy",
+          "synonyms": [
+            "fantasia",
+            "fancy",
+            "illusion",
+            "imaginary",
+            "obsession",
+            "dream",
+            "imagination"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Historical Fiction",
+          "synonyms": [
+            "nonfiction book",
+            "contemporary fiction",
+            "booksigning",
+            "teleplay",
+            "nonfiction",
+            "historical"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Science fiction",
+          "synonyms": [
+            "sci fi",
+            "speculative fiction",
+            "sci-fi/fantasy",
+            "sci-fi/horror",
+            "scifi",
+            "scientific"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Realistic Fiction",
+          "synonyms": [
+            "imagination",
+            "Realistic"
+          ]
+        }
+      ]
+    }
+  ],
+  "language": "en",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-09-20"
+    }
+  },
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "1. The Graveyard Book by Neil Gaiman 2. The Snow Child by Eowyn Ivey 3. Never Let me Go by Kazuo Ishiguro"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_27_1545854426239",
+      "metadata": {},
+      "conditions": "@genre_fiction:Fantasy",
+      "dialog_node": "node_30_1545854426239",
+      "previous_sibling": "node_29_1545854426239"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "1. Mr. Penumbra’s 24-Hour Bookstore by Robin Sloan 2. Tell the Wolves I’m Home by Carol Rifka Brunt"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_27_1545854426239",
+      "metadata": {},
+      "conditions": "@genre_fiction:(Realistic Fiction)",
+      "dialog_node": "node_31_1545854426239",
+      "previous_sibling": "node_30_1545854426239"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "1. Black Water by Joyce Carol Oates 2. Libra by Don DeLillo"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_27_1545854426239",
+      "metadata": {},
+      "conditions": "@genre_fiction:(Historical Fiction)",
+      "dialog_node": "node_29_1545854426239",
+      "previous_sibling": "node_28_1545854426239"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "1. Black (series) by Ted Dekker 2. Black Moon by Kenneth Calhoun 3. The Bone Clocks by David Mitchell 4. The Graveyard Book by Neil Gaiman 5. The Snow Child by Eowyn Ivey 6. Never Let me Go by Kazuo Ishiguro"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_27_1545854426239",
+      "metadata": {},
+      "conditions": "@genre_fiction:(Science fiction)",
+      "dialog_node": "node_28_1545854426239"
+    },
+    {
+      "type": "standard",
+      "title": "Anything Else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi, could you please reword the sentence with genre?"
+              },
+              {
+                "text": "Hi, please reword with genre?"
+              },
+              {
+                "text": "Hello, what genre are you looking for?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1545848982924",
+      "metadata": {},
+      "conditions": "#book_recommendations",
+      "dialog_node": "node_13_1545850974618",
+      "previous_sibling": "node_3_1545849018718"
+    },
+    {
+      "type": "standard",
+      "title": "Genres",
+      "output": {},
+      "parent": "node_2_1545848982924",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@book_genre",
+      "dialog_node": "node_3_1545849018718",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_14_1545852092175"
+    },
+    {
+      "type": "standard",
+      "title": "Genres - Fiction",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Wonderful!! fiction books"
+              },
+              {
+                "text": "WOW! Even I like Fiction books"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_2_1545848982924",
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_27_1545854426239"
+      },
+      "conditions": "@book_genre:fiction || @genre_fiction",
+      "dialog_node": "node_14_1545852092175",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "1. California by Edan Lepucki 2. We by Yevgeny Zamyatin"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_3_1545849018718",
+      "metadata": {},
+      "conditions": "@book_genre:Dystopia",
+      "dialog_node": "node_7_1545850771393",
+      "previous_sibling": "node_6_1545850230216"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "1. We Were Liars by E. Lockhart 2. The Fever by Megan Abbott 3. Eleanor & Park by Rainbow Rowell 4. Miss Peregrine’s Home for Peculiar Children by Ransom Riggs"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_3_1545849018718",
+      "metadata": {},
+      "conditions": "@book_genre:(Young Adult)",
+      "dialog_node": "node_11_1545850862425",
+      "previous_sibling": "node_10_1545850838898"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "1. The Liars’ Club by Mary Karr 2. The Glass Castle by Jeannette Walls 3. Same Kind of Different as Me by Ron Hall 4. Smoke Gets in Your Eyes: and Other Lessons from the Crematory by Caitlin Doughty"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_3_1545849018718",
+      "metadata": {},
+      "conditions": "@book_genre:Memoir",
+      "dialog_node": "node_5_1545850182984",
+      "previous_sibling": "node_4_1545849040196"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "1. Don't Let the Pigeon Drive the Bus Book Poster Image 2. Silliness that appeals to preschoolers. 3. Charming bedtime book is magic for truck lovers. 4. Goodnight Moon Book Poster Image 5. Ultimate going-to-bed book has stood the test of time. 6. The Snowy Day Book Poster Image"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_3_1545849018718",
+      "metadata": {},
+      "conditions": "@book_genre:Kid",
+      "dialog_node": "node_12_1545850935498",
+      "previous_sibling": "node_11_1545850862425"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "1. Hot Water Music by Charles Bukowski 2. Smoke and Mirrors by Neil Gaiman"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_3_1545849018718",
+      "metadata": {},
+      "conditions": "@book_genre:(Short Stories)",
+      "dialog_node": "node_10_1545850838898",
+      "previous_sibling": "node_7_1545850771393"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "1. Brain on Fire by Susannah Cahalan 2. Girl, Interrupted by Susanna Kaysen 3. Darkness Visible by William Styron"
+              }
+            ],
+            "response_type": "text"
+          }
+        ]
+      },
+      "parent": "node_3_1545849018718",
+      "metadata": {},
+      "conditions": "@book_genre:Psychology",
+      "dialog_node": "node_6_1545850230216",
+      "previous_sibling": "node_5_1545850182984"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "1. The Shadow of the Wind by Carlos Ruis Zafon 2. Sharp Objects by Gillian Flynn 3. The Road by Cormac McCarthy 4. The Bride Collector by Ted Dekker"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1545849018718",
+      "metadata": {},
+      "conditions": "@book_genre:Mystery || @book_genre:Horror",
+      "dialog_node": "node_4_1545849040196"
+    },
+    {
+      "type": "response_condition",
+      "output": {},
+      "parent": "node_14_1545852092175",
+      "disabled": true,
+      "metadata": {},
+      "dialog_node": "node_1_1545854460686",
+      "previous_sibling": "node_2_1545854835088"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else Fiction",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Well, what type of fiction are you looking for?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_14_1545852092175",
+      "metadata": {},
+      "conditions": "@genre_fiction || @book_genre:fiction",
+      "dialog_node": "node_2_1545854835088",
+      "previous_sibling": "node_27_1545854426239"
+    },
+    {
+      "type": "standard",
+      "title": "Genres - Fiction - Types",
+      "output": {},
+      "parent": "node_14_1545852092175",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_2_1545854835088"
+      },
+      "conditions": "@genre_fiction || @book_genre:fiction",
+      "dialog_node": "node_27_1545854426239",
+      "digress_out": "allow_all"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_2_1545848982924"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings!",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi, what genres of books are you looking for ?"
+              },
+              {
+                "text": "Hello, are you looking for books for someone?"
+              },
+              {
+                "text": "Hola, what kind of books are you looking for?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "#greetings",
+      "dialog_node": "node_1_1545848815948",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Recommend Books",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_14_1545852092175"
+      },
+      "conditions": "#book_recommendations",
+      "dialog_node": "node_2_1545848982924",
+      "previous_sibling": "node_1_1545848815948"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello, I am the book-o-recommend engine, I can help you with book recommendations for various genres. What kind of books are you looking for ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {},
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "workspace_id": "bac10c7e-6698-4ee2-8f47-240812eaeeed",
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    }
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}
