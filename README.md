@@ -16,6 +16,7 @@ book-chatbot/
 ├── README.md
 
 ➡️ 💡 How It Works (Flow)
+
 1.User opens chatbot (web or IBM Watson Assistant interface)
 
 2.User types message (e.g., "Can you recommend a mystery book?")
